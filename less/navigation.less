@@ -1,1 +1,21 @@
 // Navigation Styles here
+header {
+    .flexDisplay(space-between, Center);
+    flex-wrap: nowrap;
+    padding-top: 4%;
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 4%;
+    @media @moble {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav {
+        .flexDisplay(flex-end, center);
+        a {
+            padding: 0 25px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+        }
+    }
+}

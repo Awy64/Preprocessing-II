@@ -1,1 +1,13 @@
 // Mixins in here
+.flexDisplay(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@backColor, @radius, @height, @width) {
+    border: 2px solid @navigation-border;
+    background-color: @backColor;
+    border-radius: @radius;
+    padding: @height @width;
+}
